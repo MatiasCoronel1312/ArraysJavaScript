@@ -20,14 +20,14 @@ class Prestamo {
         this.totalAPagar = this.prestamoNeto * interes;
     }
 }
-//Declaramos un array de productos para almacenar objetos
+
 const prestamos = [];
 prestamos.push(new Prestamo("matias", "coronel","300000",12));
 prestamos.push(new Prestamo("martin", "perez","25000",6));
 prestamos.push(new Prestamo("marcos", "lozada","120000",12));
 prestamos.push(new Prestamo("alicia", "rivero","75000",9));
 prestamos.push(new Prestamo("laura", "gomez","9000",3));
-//Iteramos el array con for...of para modificarlos a todos
+
 
 for (const prestamo of prestamos){
     prestamo.InteresBanco();
